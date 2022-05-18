@@ -44,6 +44,7 @@ img {
 
 /* header */
 #wrap>header {
+  /* height: 46px; */
   padding: 17px 0;
   background-color: #242424;
   position: relative;
@@ -64,6 +65,7 @@ header>div>h1>a {
 nav>ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav>ul>li {
@@ -73,6 +75,10 @@ nav>ul>li {
 nav>ul>li>a {
   font-size: 20px;
   color: #fff;
+}
+
+p.close{
+  display: none;
 }
 
 header>#btn {
@@ -98,7 +104,7 @@ header>#btn>span {
 
 #box01 {
   padding: 0;
-  height: calc(100vh - 71px);
+  height: calc(100vh - 68px);
   width: 100%;
 }
 
@@ -188,11 +194,11 @@ header>#btn>span {
   background: #9c9491 url('../images/header_icon_01.png') no-repeat center 80px;
 }
 
-#box02>div>dl:nth-child(2) {
+#box02>div>dl:nth-child(3) {
   background-image: url('../images/header_icon_02.png');
 }
 
-#box02>div>dl:nth-child(3) {
+#box02>div>dl:nth-child(4) {
   background-image: url('../images/header_icon_03.png');
 }
 
@@ -268,7 +274,7 @@ header>#btn>span {
 #box04 .box>ul>li {
   width: 80px;
   height: 80px;
-  margin: 0 8px 16px;
+  margin: 0 8px 16px 8px;
   border: 2px solid #cbc6c5;
   float: left;
   box-sizing: border-box;
@@ -379,7 +385,6 @@ header>#btn>span {
   height: 30px;
   top: 50%;
   margin-top: -15px;
-  background-color: red;
   display: none;
 }
 

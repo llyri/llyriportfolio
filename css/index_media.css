@@ -41,9 +41,489 @@
 }
 
 @media screen and (max-width:979px) and (min-width:580px){
+  #wrap>header {
+    padding: 25px 0;
+  }
+  
+  #wrap>header>div {
+    display: block;
+    text-align: center;
+  }
+  
+  header>div>h1>a {
+    font-size: 36px;
+  }
 
+  header>#btn{
+    display: flex;
+    top: 25px;
+  }
+  nav{
+    position: fixed;
+    top: 0; 
+    /* left: 0; */
+    left: -480px;
+    width: 318px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding:284px 36px 424px 62px;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+  nav>ul{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-content: flex-end; */
+  }
+
+  nav>ul>li{
+    /* display: block; */
+    margin-left: 0; 
+    border-bottom: 1px solid #fff;
 }
 
-@media screen and (max-width:579px){
+nav>ul>li:first-child{
+  border-top:1px solid #fff;
+}
 
+  nav>ul>li>a{
+  line-height: 60px;
+}
+
+nav>.close{
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  color: #fff;
+  display: block;
+}
+
+#box01>ul>li{
+  background-size: auto 100%;
+}
+
+/* #box01>h3 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: auto;
+  border: none;
+  margin: -90px 0 0 0;
+  line-height: 1.5;
+  display: block;
+  text-align: center;
+} */
+
+#box01>h3{
+  border: none;
+}
+
+#box01>p{
+  display: none;
+}
+
+/* box02 */
+#box02>div{
+  width: 98%;
+  justify-content: space-evenly;
+}
+
+/* box03 */
+  #box03>div>.box{
+   padding-left: 0;
+   position: static;
+  }
+
+  #box03>div>.box>figure{
+    position:static;
+    margin: 0 auto 50px ;
+    width: 380px;
+  }
+
+  #box03>div>.box>figure>img{
+    max-width: 100%;
+  }
+
+  #box03>div>.box>div{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #box03>div>.box>div>p.text{
+    text-align: justify;
+  }
+
+  /* box04 */
+#box04{
+  height: auto;
+}
+
+  #box04 div.box{
+    display: block;
+    text-align: center;
+  }
+  #box04 .box>div{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .text{
+    padding: 0 20px;
+  }
+
+  #box04 .box>ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 580px;
+
+  }
+
+  #box05>.box>.gallery {
+    width: 96vw;
+    margin: 0 auto;
+  }
+  
+  #show {
+    width: 78vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  #box05 .box #all {
+    /* width: 100%;
+    display: flex;
+    flex-wrap: wrap; */
+    width: 156vw;
+  }
+  
+  #all>figure {
+    width: 24vw;
+    margin: 0 1wv 17px;
+  }
+  
+  #box05 .gallery>p {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 40%;
+    margin-top: -0.75vw;
+    color: #fff;
+    display: block;
+  }
+  
+  #box05 .gallery>p.prev {
+    left: 2vw;
+  }
+  
+  #box05 .gallery>p.next {
+    right: 2vw;
+  }
+
+  /* div06 */
+  #box06>.box {
+    display: block;
+  }
+    
+  #box06>.box>div{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  
+  #box06>.box>div>dl {
+    margin-bottom: 0;
+    text-align: left;
+    width: 77%;
+    margin: 0 auto;
+  }
+  
+  #box06>.box>div>dl>dt {
+    display: inline;
+    background-size: 18px;
+  }
+
+  #box06>.box>div>dl:nth-child(4)>dt {
+    background-size: 18px;
+  }
+  
+  #box06>.box>div>dl:nth-child(5)>dt {
+    background-size: 18px;
+  }
+  
+  #box06>.box>div>dl>dd {
+    padding-left: 0;
+    display: inline;
+  }
+  
+  #box06>.box>form {
+    margin: 0 auto;
+    width: 77%;
+  }
+
+  .submit{
+    text-align: center;
+  }
+  
+aside .submenu, aside .top{
+  display: none;
+}
+
+}
+  
+@media screen and (max-width:579px){
+  header>div, article>div{
+    width: 90vw;
+  }
+  #wrap>header{
+    padding: 10px 0;
+  }
+  #wrap>header>div {
+    display: block;
+    text-align: center;
+  }
+  
+  nav {
+    position: fixed;
+    left: -100%;
+    /* left: 0;  */
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    padding: 12.5vh;
+    box-sizing: border-box;
+  }
+
+  nav>ul{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  nav>ul>li {
+    display: block;
+    margin-left: 0;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+  }
+
+  /* nav>ul>li:first-child{
+    border-top: 1px solid #fff;
+  }
+   */
+  nav>ul>li>a {
+    font-size: 24px;
+    line-height: 12.5vh;
+  }
+  
+  p.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    top: 10px;
+    background-color: red;
+  }
+  
+  header>#btn {
+    display: block;
+  }
+  
+  header>#btn>span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  /*  */
+  #box01>p{
+    display: none;
+  }
+
+  #box01>h3 {
+    position: absolute;
+    left: 0;
+    top: 40vh;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 0;
+    text-align: center;
+    line-height: 10vh;
+    display: block;
+  }
+
+  /* box02 */
+  #box02{
+    padding: 38px 0;
+  }
+  #box02>div>dl{
+    margin-bottom: 25px;
+  }
+  #box02>div {
+    /* width: 987px; */
+    width: 90vw;
+    display: block;
+  
+  }
+  
+  #box02>div>dl {
+    width: auto;
+    padding: 25px 0;
+    text-align: center;
+    color: #fff;
+    background: none;
+    background-color: #9c9491;
+  }
+
+  #box02>div>dl:nth-child(3) {
+    background-image: none;
+  }
+  
+  #box02>div>dl:nth-child(4) {
+    background-image: none;
+    margin-bottom: 0;
+  }
+
+  #box02>div>dl>dt {
+    margin-bottom: 20px;
+  }
+  
+  #box02>div>dl>dd {
+    width:70vw;
+    text-align: center;
+  }
+
+  /* box03 */
+  #box03>div {
+    /* width: 1103px; */
+    width: 90vw;
+  }
+  
+  #box03>div>.box {
+    padding-left: 0;
+    position: static;
+  }
+  
+  #box03>div>.box>figure {
+    position: static;
+    width: 50vvw;
+    margin: 0 auto 30px;
+  }
+  
+  #box03>div>.box .text{
+    text-align: justify;
+  }
+  
+  #box03>div>.box .title{
+    text-align: center;
+  }
+  /* box04 */
+  #box04>div>.box {
+    display: block;
+  }
+  
+  #box04 .box>div {
+    /* width: 483px; */
+    width: auto;
+  }
+
+  #box04 .box>div>p{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #box04 .box>ul {
+    /* width: 576px; */
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* box05 */
+  #box05>.box{
+    text-align: center;
+  }
+
+  #box05 .box #all{
+    width: 255vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #all>figure{
+    width: 37.5vw;
+    margin-bottom: 0;
+    margin: 0 2.5vw;
+  }
+
+  #box05>.gallery>#show{
+    width: 85vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #box05 .gallery>p {
+    display: block;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 40%;
+    margin-top: -15px;
+    background-color: red;
+    display: none;
+  }
+
+  #box05 .gallery>p.prev {
+    left: -2.5vw;
+  }
+  
+  #box05 .gallery>p.next {
+    right: -2.5vw;
+  }
+
+  /*box06 */
+  #box06>.box{
+    text-align: center;
+    display: block;
+  }
+
+  #box06>.box>div{
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #box06>.box>div>dl{
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  #box06>.box>div>dl>dt{
+    display: inline;
+    background-size:20px;
+  }
+  #box06>.box>div>dl>dd{
+    display: inline;
+    padding-left: 0;
+  }
+  #box06>.box>form{
+    margin: 0 auto;
+    width: 90%;
+    padding: 5vw;
+  }
+
+  #box06>.box form ul>li>label {
+    text-align: left;
+    padding: 0 10px;
+  }
 }
